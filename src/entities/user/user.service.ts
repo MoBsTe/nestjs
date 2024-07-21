@@ -43,4 +43,8 @@ export class UserService {
     public async updateUserData(id: number, body: any) {
         return await this.userRepository.update({ id }, body)
     }
+
+    public async DeleteUser(id: number) {
+        return `Delete User with id ${id}`;
+    }
 }
